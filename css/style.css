@@ -17,6 +17,7 @@
    --color002: #1ed760;
 }
 .bg{
+    background-color: #272727;
     background-image: url("../pictures/pexels-kevin-ku-577585.jpg");
     background-size: cover;
     background-repeat: no-repeat;
