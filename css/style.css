@@ -18,8 +18,10 @@
 }
 .bg{
     background-color: #252525;
-    /*background-image: url("../pictures/matrix-gc8741d115_1920.jpg");
-    background-size: cover;*/
+    background-image: url("../pictures/pexels-kevin-ku-577585.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 ::-webkit-scrollbar{
