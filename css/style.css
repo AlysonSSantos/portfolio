@@ -49,7 +49,7 @@ header a{
     margin: 0 5px;
     text-decoration: none;
     padding: 2px 5px;
-    border-radius: 5px;
+    border-radius: 6.5px;
     transition: .5s;
 }
 
@@ -60,7 +60,7 @@ header a:hover{
 #menu{
     float: right;
     padding: 2px 5px;
-    border-radius: 5px;
+    border-radius: 6.5px;
     transition: .5s;
     margin: 0px 5px;
     transition: .5s;
@@ -80,16 +80,19 @@ header a:hover{
 .principal h1{
     line-height: 40px;
     font-size: 2.3em;
+    background-color: #2727271f;
 }
 
 input[type=button]{
-    padding: 3px 10px;
+    width: 95px;
+    height: 25px;
+    padding: 0px 10px;
     margin: 10px auto;
     background-color: var(--color001);
     border: none;
-    border-radius: 5px;
-    
+    border-radius: 6.5px;
     transition:.5s;
+    font-size: 14.5px;
 }
 
 input[type=button]:hover{
@@ -104,7 +107,7 @@ main{
 }
 
 h1.title{
-    margin: 15px auto;
+    margin: 30px auto;
     text-align: center;
     color:var(--color001);
 }
@@ -119,7 +122,7 @@ h1.title{
 }
 
 .destaque{
-    margin: 15px auto;
+    margin: 20px auto;
     max-width: 850px;
     text-align: center;
 }
@@ -130,11 +133,31 @@ h1.title{
 }
 
 #html-icon i:hover{
-    color: var(--color001);
-    /*ideia fazer texto e cor apareceer*/
+    color: #E44D26;
+    transition: .5s;
 }
 
 #css-icon{
     font-size: 5em;
-    margin-left: 350px;
+    text-align: center;
+}
+
+#css-icon i:hover{
+    color: #1A73BA;
+    transition: .5s;
+}
+
+.subtitle{
+    text-align:center;
+}
+
+.link:hover{
+    color: var(--color002);
+    transition: .4s;
+}
+
+.terminal-icon{
+    text-align:center;
+    font-size: 45px;
+    margin: 15px auto;
 }
