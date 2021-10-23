@@ -107,7 +107,7 @@ main{
 }
 
 h1.title{
-    margin: 30px auto;
+    margin: 30px auto 35px auto;
     text-align: center;
     color:var(--color001);
 }
@@ -125,6 +125,31 @@ h1.title{
     margin: 20px auto;
     max-width: 850px;
     text-align: center;
+}
+
+#conhecimento-icons{
+    max-width: 255px;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+}
+
+#conhecimento-html{
+    font-size: 16px;
+}
+
+#conhecimento-css{
+    font-size: 16px;
+}
+
+#link-html{
+    color: #E44D26;
+    text-decoration: none;
+}
+
+#link-css{
+    color:#1A73BA;
+    text-decoration: none;
 }
 
 #html-icon{
@@ -160,4 +185,43 @@ h1.title{
     text-align:center;
     font-size: 45px;
     margin: 15px auto;
+}
+
+.rodape{
+    text-align:center;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#github-icon i:hover{
+    color: #5b88a0;
+    transition: .5s;
+}
+
+#facebook-icon i:hover{
+    color:#166FE5;
+    transition: .5s;
+}
+
+#instagram-icon i:hover{
+    color:#BE4BDB;
+    transition: .5s;
+}
+
+#animated-icon{
+    text-align: center;
+}
+
+#footer-icons{
+    display: flex;
+    margin: 7px auto;
+    max-width: 120px;
+    font-size: 27px;
+    justify-content: space-between;
+}
+
+footer{
+    padding: 10px;
+    background-color:#5c5b5ba1;
+    text-align:center;
 }
