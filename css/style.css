@@ -50,11 +50,29 @@ header a{
     text-decoration: none;
     padding: 2px 5px;
     border-radius: 6.5px;
+    color: #fff;
     transition: .5s;
 }
 
 header a:hover{
     background-color: var(--color001);
+}
+
+#menuLateral{
+    position: fixed;
+    background:rgba(2, 2, 2, 0.774);
+    top: 0;
+    right: 0;
+    width: 0rem;
+    height: 100%;
+    overflow: hidden;
+    padding: .5rem 0 1rem 0;
+    transition: .3s;
+}
+
+#menuLateral a{
+    display: block;
+    padding: 1rem;
 }
 
 #menu{
@@ -64,11 +82,22 @@ header a:hover{
     transition: .5s;
     margin: 0px 5px;
     transition: .5s;
+    color: #fff;
 }
 
 #menu:hover{
     background: var(--color001);
     cursor: pointer;
+}
+
+#fecharMenu{
+    position: absolute;
+    width: 1rem;
+    height: 20px;
+    padding: 5px 8px;
+    background:rgb(151, 43, 43);
+    overflow: hidden;
+    transition: .3s;
 }
 
 .principal{
@@ -176,6 +205,8 @@ h1.title{
 .subtitle{
     text-align:center;
 }
+
+.link{color:#fff}
 
 .link:hover{
     color: var(--color002);
