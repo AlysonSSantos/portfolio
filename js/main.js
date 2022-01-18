@@ -5,3 +5,5 @@ const abrirSidebar = () => {
 const fecharSidebar = () => {
     document.getElementById("menuLateral").style.width=0;
 }
+
+
