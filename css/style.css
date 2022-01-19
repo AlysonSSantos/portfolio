@@ -76,9 +76,16 @@ header a:hover {
     transition: .3s;
 }
 
-#menuLateral a {
+#menuLateral div {
     display: block;
     padding: 1rem;
+}
+
+#menuLateral div:hover {
+    background-color: var(--color001);
+    cursor: pointer;
+    transition: .2s;
+    border-radius: .5rem;
 }
 
 #menu {
@@ -167,7 +174,7 @@ h1.title {
 }
 
 #conhecimento-icons {
-    max-width: 255px;
+    max-width: 32rem;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -178,6 +185,11 @@ h1.title {
 }
 
 #conhecimento-css {
+    font-size: 16px;
+    margin-left: -1rem;
+}
+
+#conhecimento-js {
     font-size: 16px;
 }
 
@@ -191,24 +203,40 @@ h1.title {
     text-decoration: none;
 }
 
-#html-icon {
-    font-size: 5em;
+#link-js {
+    color: #F1C40F;
+    text-decoration: none;
+}
+
+#html_icon {
+    font-size: 5rem;
     text-align: center;
 }
 
-#html-icon i:hover {
+#html_icon i:hover {
     color: #E44D26;
-    transition: .5s;
+    transition: .3s;
 }
 
-#css-icon {
-    font-size: 5em;
+#css_icon {
+    font-size: 5rem;
+    text-align: center;
+    margin-left: 1.5rem;
+}
+
+#css_icon i:hover {
+    color: #1A73BA;
+    transition: .3s;
+}
+
+#js_icon{
+    font-size: 5rem;
     text-align: center;
 }
 
-#css-icon i:hover {
-    color: #1A73BA;
-    transition: .5s;
+#js_icon i:hover{
+    color: #F1C40F;
+    transition: .3s;
 }
 
 .subtitle {
@@ -228,6 +256,16 @@ h1.title {
     text-align: center;
     font-size: 45px;
     margin: 15px auto;
+}
+
+#image{
+    margin-bottom: -1.5rem;
+    text-align: center;
+}
+
+#image img{
+    width: 10rem;
+    height: 10rem;
 }
 
 .rodape {
