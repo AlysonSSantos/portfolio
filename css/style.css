@@ -82,11 +82,12 @@ header a:hover {
 }
 
 #menu {
-    float: right;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
     padding: 2px 5px;
     border-radius: 6.5px;
     transition: .5s;
-    margin: 0px 5px;
     transition: .5s;
     color: #fff;
 }
