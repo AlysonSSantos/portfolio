@@ -142,9 +142,15 @@ header div:hover{
     margin: auto 8rem;
 }
 
+p#principalApresentacao{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
 .principal h1 {
     line-height: 40px;
     font-size: 2.5em;
+    margin-bottom: 1rem;
 }
 
 .principal a {
@@ -337,7 +343,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 600px){
     #menu{
         display: block;
     }
@@ -358,7 +364,7 @@ footer {
     }
     .principal img{
         position: relative;
-        margin: -12rem 1rem auto auto;
+        margin: -12rem 1.5rem auto auto;
         filter: blur(3px);
         z-index: -10;
     } 
