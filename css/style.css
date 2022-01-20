@@ -350,8 +350,8 @@ footer {
     header div{
         display: none;
     }
-    #textoPrincipal{
-        text-align: center;
+    .principal{
+        margin-top: 200px;
     }
     .principal a{
         margin: .5rem auto;
@@ -361,6 +361,9 @@ footer {
         margin: -12rem 1rem auto auto;
         filter: blur(3px);
         z-index: -10;
+    } 
+    #textoPrincipal{
+        text-align: center;
     }
 }
 
