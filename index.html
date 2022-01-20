@@ -11,32 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/code.png">
     <script src="js/main.js"></script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 
 </head>
 
 <body class="bg">
     <header>
 
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Conhecimentos</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contate-me</a>
+        <div onclick="redirecionarDesktopAoHome()" href="#">Home</div>
+        <div onclick="redirecionarDesktopAoSobre()" href="#">Sobre</div>
+        <div onclick="redirecionarDesktopAConhecimentos()" href="#">Conhecimentos</div>
+        <div onclick="redirecionarDesktopAosProjetos()" href="#">Projetos</div>
+        <div onclick="redirecionarDesktopAoContate_me()" href="#">Contate-me</div>
         <div onclick="abrirSidebar()" id="menu">Menu</div>
 
         <nav id="menuLateral">
             <p onclick="fecharSidebar()" id="fecharMenu" href="#">X</p>
-            <div onclick="redirecionarAoHome()">Home</div>
-            <div onclick="redirecionarSobre()">Sobre</div>
-            <div onclick="redirecionarAConhecimentos()">Conhecimentos</div>
-            <div onclick="redirecionarAosProjetos()">Projetos</div>
-            <div onclick="redirecionarAoContate_me()">Contate-me</div>
+            <div onclick="redirecionarMobileAoHome()">Home</div>
+            <div onclick="redirecionarMobileAoSobre()">Sobre</div>
+            <div onclick="redirecionarMobileAConhecimentos()">Conhecimentos</div>
+            <div onclick="redirecionarMobileAosProjetos()">Projetos</div>
+            <div onclick="redirecionarMobileAoContate_me()">Contate-me</div>
         </nav>
 
     </header>
     <div class="principal">
-        <h1>Alyson da Silva<br>dos Santos</h1>
-        <a href="https://www.instagram.com/alyson_s_/" target="_blank"><input type="button" value="Instagram"></a>
+
+        <div id="textoPrincipal">
+            <h1>Alyson da Silva<br>dos Santos</h1>
+            <a href="https://www.instagram.com/alyson_s_/" target="_blank">Instagram</a>
+        </div>
+
+        <img src="pictures/Code_perspective_matte-removebg-preview.png" alt="code icone">
+        
     </div>
     <main>
         <h1 class="title">Sobre</h1>
@@ -77,7 +84,6 @@
         <p class="destaque">Para me ajudar com um café - Chave PIX: 03340529043 ou o e-mail acima :)</p>
 
         <div id="animated-icon">
-            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
             <lord-icon src="https://cdn.lordicon.com/anihkfxp.json" trigger="loop"
                 colors="primary:#121331,secondary:#08a88a" style="width:200px;height:200px;margin:auto">
             </lord-icon>

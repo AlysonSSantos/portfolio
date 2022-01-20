@@ -14,8 +14,8 @@
 }
 
 :root {
-    --color001: #1b9e49;
-    --color002: #1ed760;
+    --color001: #4D5ACB;
+    --color002: #7184FF;
 }
 
 html {
@@ -23,15 +23,21 @@ html {
 }
 
 .bg {
+    /*
     background-color: #272727;
     background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    */
+    background-image: linear-gradient(45deg, #2a3383, #000);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 15s ease infinite;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
+    background-color: #000000be;
 }
 
 ::-webkit-scrollbar-track {
@@ -42,7 +48,7 @@ html {
 ::-webkit-scrollbar-thumb {
     width: 5px;
     height: 15px;
-    background: rgb(2, 2, 2);
+    background: #31374b;
     border-radius: 15px;
 }
 
@@ -51,22 +57,25 @@ header {
     margin: 15px auto 15px 100px;
 }
 
-header a {
-    margin: 0 5px;
+header div {
+    display: inline-block;
+    margin: 0 .3rem;
     text-decoration: none;
-    padding: 2px 5px;
+    padding: 2.5px 8px;
     border-radius: 6.5px;
     color: #fff;
-    transition: .5s;
 }
 
-header a:hover {
-    background-color: var(--color001);
+header div:hover{
+    color: var(--color001);
+    text-shadow: 0 0 1rem #ffffff;
+    cursor: pointer;
+    transition: .3s;
 }
 
 #menuLateral {
     position: fixed;
-    background: rgba(2, 2, 2, 0.774);
+    background: #020202c5;
     top: 0;
     right: 0;
     width: 0rem;
@@ -74,11 +83,14 @@ header a:hover {
     overflow: hidden;
     padding: 3.5rem 0 1rem 0;
     transition: .3s;
+    display: none;
 }
 
 #menuLateral div {
     display: block;
     padding: 1rem;
+    color: #fff;
+    text-shadow: none;
 }
 
 #menuLateral div:hover {
@@ -97,10 +109,12 @@ header a:hover {
     transition: .5s;
     transition: .5s;
     color: #fff;
+    display: none;
+    background-color: var(--color001);
 }
 
 #menu:hover {
-    background: var(--color001);
+    background: var(--color002);
     cursor: pointer;
 }
 
@@ -114,6 +128,7 @@ header a:hover {
     overflow: hidden;
     transition: .3s;
     cursor: pointer;
+    display: none;
 }
 
 .principal {
@@ -122,28 +137,43 @@ header a:hover {
     transition: .5s;
 }
 
-.principal h1 {
-    line-height: 40px;
-    font-size: 2.3em;
-    background-color: #27272705;
+#textoPrincipal{
+    text-align: left;
+    margin: auto 8rem;
 }
 
-input[type=button] {
-    width: 95px;
-    height: 25px;
-    padding: 0px 10px;
-    margin: 10px auto;
+.principal h1 {
+    line-height: 40px;
+    font-size: 2.5em;
+}
+
+.principal a {
+    display: block;
+    width: 5rem;
+    margin: .5rem 0;
+    padding: .3rem .5rem;
+    text-align: center;
     background-color: var(--color001);
     border: none;
     border-radius: 6.5px;
     transition: .5s;
     font-size: 14.5px;
+    text-decoration: none;
 }
 
-input[type=button]:hover {
-    color: black;
+.principal a:hover {
+    background-color: var(--color002);
+    box-shadow: 0 0 2.5rem .1rem var(--color001);
     cursor: pointer;
 }
+
+.principal img{
+    width: 15rem;
+    height: 15rem;
+    margin: -11.5rem 10rem;
+    float: right;
+}
+
 
 main {
     background-color: #272727;
@@ -155,13 +185,13 @@ main {
 h1.title {
     margin: 30px auto 35px auto;
     text-align: center;
-    color: var(--color001);
+    color: var(--color002);
 }
 
 .title::after {
     content: '';
     display: block;
-    background: var(--color001);
+    background: var(--color002);
     width: 120px;
     height: 2px;
     margin: 5px auto;
@@ -305,4 +335,45 @@ footer {
     padding: 10px;
     background-color: #5c5b5ba1;
     text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    #menu{
+        display: block;
+    }
+    #menuLateral{
+        display: block;
+    }
+    #fecharMenu{
+        display: block;
+    }
+    header div{
+        display: none;
+    }
+    #textoPrincipal{
+        text-align: center;
+    }
+    .principal a{
+        margin: .5rem auto;
+    }
+    .principal img{
+        position: relative;
+        margin: -12rem 1rem auto auto;
+        filter: blur(3px);
+        z-index: -10;
+    }
+}
+
+@keyframes backgroundAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }

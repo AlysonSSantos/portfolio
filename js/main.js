@@ -6,23 +6,43 @@ const fecharSidebar = () => {
     document.getElementById("menuLateral").style.width=0;
 }
 
-const redirecionarAoHome = () => {
+const redirecionarMobileAoHome = () => {
     window.scrollTo(0, 0)
 }
 
-const redirecionarSobre = () => {
-    window.scrollTo(0, 679)
+const redirecionarMobileAoSobre = () => {
+    window.scrollTo(0, 670)
+}
+
+const redirecionarMobileAConhecimentos = () => {
+    window.scrollTo(0, 890)
+}
+
+const redirecionarMobileAosProjetos = () => {
+    window.scrollTo(0, 1235)
+}
+
+const redirecionarMobileAoContate_me = () => {
+    window.scrollTo(0, 2048)
 }
 
 
-const redirecionarAConhecimentos = () => {
-    window.scrollTo(0, 857)
+const redirecionarDesktopAoHome = () => {
+    window.scrollTo(0, 0)
 }
 
-const redirecionarAosProjetos = () => {
-    window.scrollTo(0, 1180)
+const redirecionarDesktopAoSobre = () => {
+    window.scrollTo(0, 696)
 }
 
-const redirecionarAoContate_me = () => {
-    window.scrollTo(0, 1550)
+const redirecionarDesktopAConhecimentos = () => {
+    window.scrollTo(0, 874)
+}
+
+const redirecionarDesktopAosProjetos = () =>{
+    window.scrollTo(0, 1193)
+}
+
+const redirecionarDesktopAoContate_me = () => {
+    window.scrollTo(0, 1899)
 }
