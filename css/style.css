@@ -23,13 +23,6 @@ html {
 }
 
 .bg {
-    /*
-    background-color: #272727;
-    background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    */
     background-image: linear-gradient(45deg, #2a3383, #000);
     background-size: 300% 300%;
     animation: backgroundAnimation 15s ease infinite;
@@ -142,7 +135,7 @@ header div:hover{
     margin: auto 8rem;
 }
 
-p#principalApresentacao{
+#textoPrincipal p{
     font-size: 1.2rem;
     margin-bottom: .5rem;
 }
@@ -363,7 +356,7 @@ footer {
         margin: .5rem auto;
     }
     .principal img{
-        position: absolute;
+        position: relative;
         margin: -12rem 1.5rem auto auto;
         filter: blur(3px);
         z-index: -10;
@@ -375,7 +368,7 @@ footer {
         font-size: 1rem;
     }
     #textoPrincipal h1{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 
