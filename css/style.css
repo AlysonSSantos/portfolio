@@ -361,7 +361,7 @@ footer {
     }
     #imagemPrincipal img{
         position: relative;
-        transform: translate(15%, -10%);
+        transform: translate(50%, -10%);
         width: 15rem;
         height: 15rem;
         filter: blur(3px);
