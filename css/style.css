@@ -361,12 +361,16 @@ footer {
     }
     #imagemPrincipal img{
         position: relative;
-        transform: translate(50%, -10%);
-        width: 15rem;
-        height: 15rem;
+        margin: -14rem auto;
         filter: blur(3px);
         z-index: -10;
     } 
+    #imagemPrincipal{
+        text-align: center;
+        margin: auto;
+        width: 15rem;
+        height: 15rem;
+    }
     #textoPrincipal{
         text-align: center;
     }
