@@ -361,7 +361,7 @@ footer {
     }
     #imagemPrincipal img{
         position: relative;
-        margin: -14rem auto;
+        margin: -15.5rem auto;
         filter: blur(3px);
         z-index: -10;
     } 
@@ -373,6 +373,10 @@ footer {
     }
     #textoPrincipal{
         text-align: center;
+    }
+    .principalDescricao{
+        font-size: 1.1rem;
+        width: 15rem;
     }
     #textoPrincipal h1{
         margin-left: auto;
