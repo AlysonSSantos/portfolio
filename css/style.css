@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-@media (max-width: 750px) {
-    header a {
-        display: none;
-    }
-}
-
 * {
     color: white;
     margin: .2px;
@@ -126,7 +120,7 @@ header div:hover{
 
 .principal {
     text-align: center;
-    margin: 240px auto 2px auto;
+    margin: 200px auto 2px auto;
     transition: .5s;
 }
 
@@ -170,7 +164,7 @@ header div:hover{
 .principal img{
     width: 15rem;
     height: 15rem;
-    margin: -11.5rem 10rem;
+    margin: -14rem 10rem;
     float: right;
 }
 
@@ -365,9 +359,11 @@ footer {
     .principal a{
         margin: .5rem auto;
     }
-    .principal img{
+    #imagemPrincipal img{
         position: relative;
-        margin: -12rem 1.5rem auto auto;
+        transform: translate(15%, -10%);
+        width: 15rem;
+        height: 15rem;
         filter: blur(3px);
         z-index: -10;
     } 
