@@ -363,7 +363,7 @@ footer {
         margin: .5rem auto;
     }
     .principal img{
-        position: relative;
+        position: absolute;
         margin: -12rem 1.5rem auto auto;
         filter: blur(3px);
         z-index: -10;
