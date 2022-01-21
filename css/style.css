@@ -371,6 +371,12 @@ footer {
     #textoPrincipal{
         text-align: center;
     }
+    #textoPrincipal p{
+        font-size: 1.1rem;
+    }
+    #textoPrincipal h1{
+        font-size: 2rem;
+    }
 }
 
 @keyframes backgroundAnimation{
