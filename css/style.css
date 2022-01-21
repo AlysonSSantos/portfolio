@@ -269,11 +269,34 @@ h1.title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
-    animation: backgroundAnimation 7s ease infinite;
+    animation: backgroundAnimation 7s ease infinite
+}
+
+.projetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+#projetoATM{
+    text-align: center;
+    max-width: 15rem;
+    align-self: baseline;
+}
+
+#projetoLoja{
+    max-width: 15rem;
+    margin-left: 2rem;
 }
 
 .subtitle {
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .link {
@@ -376,7 +399,6 @@ footer {
     }
     .principalDescricao{
         font-size: 1.1rem;
-        width: 8rem;
     }
     #textoPrincipal h1{
         margin-left: auto;
@@ -384,6 +406,19 @@ footer {
     }
     #conhecimento-icons{
         display: block;
+    }
+    .projetos{
+        display: block;
+    }
+    #projetoATM{
+        text-align: center;
+        margin: auto;
+        min-width: 100%;
+    }
+    #projetoLoja{
+        text-align: center;
+        margin: auto;
+        min-width: 100%;
     }
 }
 
