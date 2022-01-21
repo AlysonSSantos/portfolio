@@ -23,7 +23,7 @@ html {
 }
 
 .bg {
-    background-image: linear-gradient(45deg, #2a3383, #000);
+    background-image: linear-gradient(45deg, #1f2774, #000);
     background-size: 300% 300%;
     animation: backgroundAnimation 15s ease infinite;
 }
@@ -135,15 +135,16 @@ header div:hover{
     margin: auto 8rem;
 }
 
-#textoPrincipal p{
+.principalDescricao{
     font-size: 1.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 .principal h1 {
     line-height: 40px;
     font-size: 2.5em;
-    margin-bottom: 1rem;
+    margin-top: -.5rem;
+    margin-bottom: .5rem;
 }
 
 .principal a {
@@ -242,9 +243,12 @@ h1.title {
     text-align: center;
 }
 
-#html_icon i:hover {
-    color: #E44D26;
-    transition: .3s;
+#html_icon i{
+    background-image:linear-gradient(#e2f2ff, #E44D26) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: backgroundAnimation 7s ease infinite;
 }
 
 #css_icon {
@@ -253,9 +257,12 @@ h1.title {
     margin-left: 1.5rem;
 }
 
-#css_icon i:hover {
-    color: #1A73BA;
-    transition: .3s;
+#css_icon i{
+    background-image:linear-gradient(#e2f2ff, #1A73BA) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: backgroundAnimation 7s ease infinite;
 }
 
 #js_icon{
@@ -263,9 +270,12 @@ h1.title {
     text-align: center;
 }
 
-#js_icon i:hover{
-    color: #F1C40F;
-    transition: .3s;
+#js_icon i{
+    background-image:linear-gradient(#ffffe2, #F1C40F) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: backgroundAnimation 7s ease infinite;
 }
 
 .subtitle {
@@ -364,25 +374,26 @@ footer {
     #textoPrincipal{
         text-align: center;
     }
-    #textoPrincipal p{
-        font-size: 1.1rem;
-    }
     #textoPrincipal h1{
         margin-left: auto;
         margin-right: auto;
+    }
+    #conhecimento-icons{
+        display: block;
     }
 }
 
 @keyframes backgroundAnimation{
     0%{
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
 
     50%{
-        background-position: 100% 50%
+        background-position: 100% 30%
     }
 
     100%{
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
 }
+
