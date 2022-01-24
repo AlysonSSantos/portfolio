@@ -46,3 +46,6 @@ const redirecionarDesktopAosProjetos = () =>{
 const redirecionarDesktopAoContate_me = () => {
     window.scrollTo(0, 1899)
 }
+
+
+    
