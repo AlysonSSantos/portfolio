@@ -41,7 +41,7 @@ html {
 
 header {
     text-align: center;
-    margin: 15px auto 15px 100px;
+    margin: 15px;
 }
 
 header div {
@@ -377,7 +377,8 @@ footer {
         display: none;
     }
     .principal{
-        margin-top: 200px;
+        margin-top: 140px;
+        margin-bottom: -235px;
     }
     .principal a{
         margin: .5rem auto;
