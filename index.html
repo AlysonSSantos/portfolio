@@ -8,11 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1b9e49">
     <title>Portifólio - Desenvolvedor</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <!--Folha de estilo principal-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--Icons-->
+
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/code.png">
+    <!--Icons-->
+
     <script src="js/main.js"></script>
+    <!--Script Principal da página-->
+
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!--Icons-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--Biblioteca efeito scrollReveal-->
 
 </head>
 
@@ -47,7 +61,6 @@
 
         <div id="imagemPrincipal"><img src="pictures/Code_perspective_matte-removebg-preview.png" alt="code icone">
         </div>
-
     </div>
     <main>
         <h1 class="title">Sobre</h1>
@@ -75,17 +88,23 @@
             <div id="projetoATM">
                 <h2 class="subtitle">ATM Simulator - C language</h2>
                 <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
-                <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller MAchine Simulator
-                é um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do mesmo (em breve no <a class="link"
-                        href="https://github.com/AlysonSSantos" target="_blank">github</a>).</p>
+                <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller Machine é
+                    um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do mesmo
+                    (em breve no <a class="link" href="https://github.com/AlysonSSantos" target="_blank">github</a>).
+                </p>
             </div>
+
             <div id="projetoLoja">
                 <h2 class="subtitle">E-Commerce com login</h2>
-                <div id="image"> <img src="pictures/basket image.png" alt="Imagem de uma cesta de compras minimalista"> </div>
-                <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript, porém as ideias aumentaram e tornou-se um login para um E-commerce! Com a possibilidade de login com o google para usuários de teste. (Projeto ainda em andamento - Presente no <a class="link" href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
+                <div id="image"> <img src="pictures/basket image.png" alt="Imagem de uma cesta de compras minimalista">
+                </div>
+                <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript, porém
+                    as ideias aumentaram e tornou-se um login para um E-commerce! Com a possibilidade de login com o
+                    google para usuários de teste. (Projeto ainda em andamento - Presente no <a class="link"
+                        href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
             </div>
         </div>
-    
+
         <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para o
             aprendizado.</p>
         <h2 class="subtitle">Continua...</h2>
@@ -114,5 +133,19 @@
         </div>
     </footer>
 </body>
+<script>
+    ScrollReveal().reveal('.destaque', {
+        delay: 210
+    })
+    ScrollReveal().reveal('.title', {
+        delay: 210
+    })
+    ScrollReveal().reveal('.bg', {
+        delay: 70
+    })
+    ScrollReveal().reveal('.fab', {
+        delay: 210
+    })
+</script>
 
 </html>

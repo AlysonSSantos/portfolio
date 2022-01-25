@@ -19,11 +19,11 @@ const redirecionarMobileAConhecimentos = () => {
 }
 
 const redirecionarMobileAosProjetos = () => {
-    window.scrollTo(0, 1235)
+    window.scrollTo(0, 1461)
 }
 
 const redirecionarMobileAoContate_me = () => {
-    window.scrollTo(0, 2048)
+    window.scrollTo(0, 2663)
 }
 
 
@@ -32,19 +32,19 @@ const redirecionarDesktopAoHome = () => {
 }
 
 const redirecionarDesktopAoSobre = () => {
-    window.scrollTo(0, 696)
+    window.scrollTo(0, 756)
 }
 
 const redirecionarDesktopAConhecimentos = () => {
-    window.scrollTo(0, 874)
+    window.scrollTo(0, 943)
 }
 
 const redirecionarDesktopAosProjetos = () =>{
-    window.scrollTo(0, 1193)
+    window.scrollTo(0, 1241)
 }
 
 const redirecionarDesktopAoContate_me = () => {
-    window.scrollTo(0, 1899)
+    window.scrollTo(0, 2007)
 }
 
 
