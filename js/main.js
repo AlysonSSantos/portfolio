@@ -11,11 +11,11 @@ const redirecionarMobileAoHome = () => {
 }
 
 const redirecionarMobileAoSobre = () => {
-    window.scrollTo(0, 670)
+    window.scrollTo(document.getElementById("sobre"))
 }
 
 const redirecionarMobileAConhecimentos = () => {
-    window.scrollTo(0, 890)
+    window.scrollTo(document.getElementById("conhecimentos"))
 }
 
 const redirecionarMobileAosProjetos = () => {

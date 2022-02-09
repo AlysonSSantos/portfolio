@@ -7,7 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1b9e49">
-    <title>Portifólio - Desenvolvedor</title>
+    
+    <!--SEO-->
+    <!--Search Engine Optimization-->
+    <title>Portifólio - Alyson Santos</title>
+    <meta name="description" content="Portifólio de Alyson S. Santos">
+    <!--SMO-->
+    <!--Social Media Optimization-->
+    <meta property="og:title" content="Portifólio - Alyson Santos"/>
+    <meta property="og:site_name" content="Portifólio de Alyson S."/>
+    <meta property="og:description" content="Portifólio de Alyson S. Santos"/>
+    <meta property="og:url" content="https://portifolio-swart-ten.vercel.app/"/>
+    <meta property="og:image" content="https://lh3.googleusercontent.com/LwrquRfIYUELrRnKYEblJ041fE8NnZpxlhUDPi17jN9rvy4N1wdpZQvXtgEraWE2r5Om=s85"/>
+    <meta property="og:image:type" content="image/jpeg"/>    
+
 
     <link rel="stylesheet" href="css/style.css">
     <!--Folha de estilo principal-->
@@ -63,36 +76,42 @@
         </div>
     </div>
     <main>
-        <h1 class="title">Sobre</h1>
-        <p class="destaque">Hello, World! Eu me chamo Alyson e gostaria de me apresentar: Tenho 16 anos, estou cursando
-            Automação Industrial, juntamente com o segundo ano do ensino médio, no Instituto Federal Farroupilha de
-            Panambi/RS, sou cristão, sonhador e um programador que busca cada dia aprender mais.</p>
-        <h1 class="title">Conhecimentos</h1>
-        <p class="destaque">"Um bom algotítimo é como uma faca afiada. Faz o que foi feito para fazer de maneira simples
-            e eficiente"</p>
-        <div id="conhecimento-icons">
-            <div id="html_icon"><i class="fab fa-html5"></i>
-                <p id="conhecimento-html"><a id="link-html" href="#">HTML</a> semântico e responsivo</p>
-            </div>
-            <div id="css_icon"><i class="fab fa-css3"></i>
-                <p id="conhecimento-css"><a id="link-css" href="#">CSS</a> moderno e atualizado</p>
-            </div>
-            <div id="js_icon"><i class="fab fa-js-square"></i>
-                <p id="conhecimento-js"><a id="link-js" href="#">JavaScript</a> moderno e código limpo</p>
-            </div>
-        </div>
+        <section id="sobre">
+            <h1 class="title">Sobre</h1>
+            <p class="destaque">Hello, World! Eu me chamo Alyson e gostaria de me apresentar: Tenho 16 anos, sou admirado em programação, na área do Front-end, desenvolvimento Web, mobile e design.</p>
+            <img src="pictures/euu.png" alt="Foto de Alyson Santos (casaco preto em uma simples selfie à luz do dia)">
+            <p class="destaque">Sou cristão, sonhador e um programador<br>que busca cada dia aprender mais.</p>
+        </section>
 
-        <h1 class="title">Projetos</h1>
-        <p class="destaque">A programação proporciona a criação de inúmeras ideias, aqui estão as minhas:</p>
-        <div class="projetos">
-            <div id="projetoATM">
-                <h2 class="subtitle">ATM Simulator - C language</h2>
-                <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
-                <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller Machine é
-                    um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do mesmo
-                    (em breve no <a class="link" href="https://github.com/AlysonSSantos" target="_blank">github</a>).
-                </p>
-            </div>
+            <section id="conhecimentos">
+                <h1 class="title">Conhecimentos</h1>
+                <p class="destaque">"Um bom algotítimo é como uma faca afiada. Faz o que foi feito para fazer de maneira simples
+                    e eficiente"</p>
+                <div id="conhecimento-icons">
+                    <div id="html_icon"><i class="fab fa-html5"></i>
+                        <p id="conhecimento-html"><a id="link-html" href="#">HTML</a> semântico e responsivo</p>
+                    </div>
+                    <div id="css_icon"><i class="fab fa-css3"></i>
+                        <p id="conhecimento-css"><a id="link-css" href="#">CSS</a> moderno e atualizado</p>
+                    </div>
+                    <div id="js_icon"><i class="fab fa-js-square"></i>
+                        <p id="conhecimento-js"><a id="link-js" href="#">JavaScript</a> moderno e código limpo</p>
+                    </div>
+                </div>
+            </section>
+
+        <section id="projetos">
+            <h1 class="title">Projetos</h1>
+            <p class="destaque">A programação proporciona a criação de inúmeras ideias, aqui estão as minhas:</p>
+            <div class="projetos">
+                <div id="projetoATM">
+                    <h2 class="subtitle">ATM Simulator - C language</h2>
+                    <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
+                    <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller Machine é
+                        um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do mesmo
+                        (em breve no <a class="link" href="https://github.com/AlysonSSantos" target="_blank">github</a>).
+                    </p>
+                </div>
 
             <div id="projetoLoja">
                 <h2 class="subtitle">E-Commerce com login</h2>
@@ -108,18 +127,21 @@
         <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para o
             aprendizado.</p>
         <h2 class="subtitle">Continua...</h2>
-        <h1 class="title">Contate-me</h1>
-        <p class="destaque">Para ter seu site feito por mim, ou se deseja falar comigo, a seguir o meu e-mail e após as
-            redes sociais.</p>
-        <h2 class="subtitle">alysonsantos080@gmail.com</h2>
-        <p class="destaque">Para me ajudar com um café - Chave PIX: 03340529043 ou o e-mail acima :)</p>
+        </section>
 
-        <div id="animated-icon">
-            <lord-icon src="https://cdn.lordicon.com/anihkfxp.json" trigger="loop"
-                colors="primary:#4D5ACB,secondary:#929cf1" style="width:200px;height:200px;margin:auto">
-            </lord-icon>
-            <p class="destaque">Até logo! Deus abençoe.</p>
-        </div>
+        <section id="contatar">
+            <h1 class="title">Contate-me</h1>
+            <p class="destaque">Para ter seu site feito por mim, ou se deseja falar comigo, a seguir o meu e-mail e após as
+                redes sociais.</p>
+            <h2 class="subtitle">alysonsantos080@gmail.com</h2>
+            <p class="destaque">Para me ajudar com um café - Chave PIX: 03340529043 ou o e-mail acima :)</p>
+            <div id="animated-icon">
+                <lord-icon src="https://cdn.lordicon.com/anihkfxp.json" trigger="loop"
+                    colors="primary:#4D5ACB,secondary:#929cf1" style="width:200px;height:200px;margin:auto">
+                </lord-icon>
+                <p class="destaque">Até logo! Deus abençoe.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="rodape">Onde me encontrar:</div>

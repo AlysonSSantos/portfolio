@@ -179,6 +179,7 @@ main {
 h1.title {
     margin: 30px auto 35px auto;
     text-align: center;
+    font-size: 2rem;
     color: var(--color002);
 }
 
@@ -195,6 +196,15 @@ h1.title {
     margin: 20px auto;
     max-width: 850px;
     text-align: center;
+}
+
+#sobre{
+    text-align: center;
+}
+
+#sobre img{
+    width: 10rem;
+    margin: 1.5rem auto;
 }
 
 #conhecimento-icons {
@@ -427,6 +437,9 @@ footer {
     #textoPrincipal h1{
         margin-left: auto;
         margin-right: auto;
+    }
+    #sobre img{
+        width: 7rem;
     }
     #conhecimento-icons{
         display: block;
