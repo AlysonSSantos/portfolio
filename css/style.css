@@ -109,7 +109,7 @@ header div:hover{
     position: absolute;
     width: 2.5rem;
     padding: .5rem 0;
-    margin: -2.5rem .5rem;
+    margin: -2rem .5rem;
     background: #972b2b;
     border-radius: .3rem;
     overflow: hidden;
@@ -407,28 +407,21 @@ footer {
     }
     #fecharMenu{
         display: block;
+        right: .7rem;
+        padding: 4px 10px;
     }
     header div{
         display: none;
     }
     .principal{
         margin-top: 140px;
-        margin-bottom: -235px;
+        margin-bottom: -50px;
     }
     .principal a{
         margin: .5rem auto;
     }
     #imagemPrincipal img{
-        position: relative;
-        margin: -15.5rem auto;
-        filter: blur(3px);
-        z-index: -10;
-    } 
-    #imagemPrincipal{
-        text-align: center;
-        margin: auto;
-        width: 15rem;
-        height: 15rem;
+        display: none;
     }
     #textoPrincipal{
         text-align: center;
