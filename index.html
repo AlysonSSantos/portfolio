@@ -68,7 +68,7 @@
         <div id="textoPrincipal">
             <p class="principalDescricao">Hello world, eu sou</p>
             <h1>Alyson<br> Santos</h1>
-            <p class="principalDescricao">Front-end developer,<br>desenvolvedor web. . .</p>
+            <p class="principalDescricao">Front-end developer,<br>desenvolvedor web, UI designer. . .</p>
             <a href="https://www.instagram.com/alyson_s_/" target="_blank">Instagram</a>
         </div>
 
@@ -79,7 +79,7 @@
         <section id="sobre">
             <h1 class="title">Sobre</h1>
             <p class="destaque">Hello, World! Eu me chamo Alyson e gostaria de me apresentar: Tenho 16 anos, sou admirado em programação, na área do Front-end, desenvolvimento Web, mobile e design.</p>
-            <img src="pictures/euu.png" alt="Foto de Alyson Santos (casaco preto em uma simples selfie à luz do dia)">
+            <img id="devPhoto" src="pictures/euu.png" alt="Foto de Alyson Santos (casaco preto em uma simples selfie à luz do dia)">
             <p class="destaque">Sou cristão, sonhador e um programador<br>que busca cada dia aprender mais.</p>
         </section>
 
@@ -166,6 +166,9 @@
         delay: 70
     })
     ScrollReveal().reveal('.fab', {
+        delay: 210
+    })
+    ScrollReveal().reveal('#devPhoto', {
         delay: 210
     })
 </script>
