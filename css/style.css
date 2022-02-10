@@ -416,9 +416,11 @@ footer {
     .principal{
         margin-top: 140px;
         margin-bottom: -50px;
+        text-align: center;
     }
     .principal a{
         margin: .5rem auto;
+        text-align: center;
     }
     #imagemPrincipal img{
         display: none;
@@ -428,13 +430,17 @@ footer {
         background-color: #00000011;
         padding: 1rem;
         border-radius: .5rem;
+        margin: auto;
     }
     .principalDescricao{
-        font-size: 1.1rem;
+        font-size: 1.08rem;
     }
     #textoPrincipal h1{
         margin-left: auto;
         margin-right: auto;
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: center;
     }
     #sobre img{
         width: 7rem;
