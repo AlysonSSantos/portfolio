@@ -17,31 +17,39 @@ html {
 }
 
 .bg {
-    background-image: linear-gradient(45deg, #1f2774, #000);
+    background-image: linear-gradient(45deg, #1f2774, #1a1919);
     background-size: 300% 300%;
     animation: backgroundAnimation 15s ease infinite;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #000000be;
+    background-color: var(--color001);
 }
 
 ::-webkit-scrollbar-track {
     background: var(--color001);
-    border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
     width: 5px;
     height: 15px;
     background: #31374b;
-    border-radius: 15px;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #31374bc4;
 }
 
 header {
     text-align: center;
-    margin: 15px;
+    padding: 15px 0 15px 1rem;
+    margin: .5rem auto;
+    width: 95%;
+    background-color: #ffffff13;
+    border-radius: 1rem;
+    text-align: left;
 }
 
 header div {
@@ -58,6 +66,16 @@ header div:hover{
     text-shadow: 0 0 1rem #ffffff;
     cursor: pointer;
     transition: .3s;
+}
+
+#iconsDesktopMenu{
+    float: right;
+    margin: auto 1rem auto auto;
+}
+
+#iconsDesktopMenu i{
+    margin: auto -1rem;
+    font-size: 1.1rem;
 }
 
 #menuLateral {
@@ -92,16 +110,16 @@ header div:hover{
     right: 1rem;
     top: 1.5rem;
     padding: 4px 8px;
-    border-radius: 6.5px;
-    transition: .5s;
-    transition: .5s;
+    transition: .3s;
     color: #fff;
     display: none;
-    background-color: var(--color001);
+    background-color: #272727;
+    border: solid var(--color002) 2px;
+    border-radius: .6rem;
 }
 
 #menu:hover {
-    background: var(--color002);
+    background: var(--color001);
     cursor: pointer;
 }
 
@@ -118,9 +136,17 @@ header div:hover{
     display: none;
 }
 
+.bottomMenu{
+    display: block;
+    position: fixed;
+    background:#9b5959;
+    width: 100%;
+    height: 10vh;
+}
+
 .principal {
     text-align: center;
-    margin: 200px auto 2px auto;
+    margin: 26vh auto 2px auto;
     transition: .5s;
 }
 
@@ -205,8 +231,16 @@ h1.title {
 #sobre img{
     width: 10rem;
     margin: 1.5rem auto;
-    box-shadow: 0 0 2rem 0 #000;
     border-radius: 50%;
+}
+
+#sobreBox{
+    width: 800px;
+    margin: auto;
+    background-color: #272727;
+    box-shadow: 0 0 2rem -1rem var(--color001);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 #conhecimento-icons {
@@ -365,19 +399,19 @@ h1.title {
     text-transform: uppercase;
 }
 
-#github-icon i:hover {
-    color: #5b88a0;
-    transition: .5s;
+.github-icon i:hover {
+    color: #113146;
+    transition: .2s;
 }
 
-#facebook-icon i:hover {
+.facebook-icon i:hover {
     color: #166FE5;
-    transition: .5s;
+    transition: .2s;
 }
 
-#instagram-icon i:hover {
+.instagram-icon i:hover {
     color: #BE4BDB;
-    transition: .5s;
+    transition: .2s;
 }
 
 #animated-icon {
@@ -399,6 +433,12 @@ footer {
 }
 
 @media screen and (max-width: 750px){
+    .mobileBottomNavigation{
+        display: block;
+    }
+    #bottomMenu{
+        display: block;
+    }
     #menu{
         display: block;
     }
@@ -412,6 +452,10 @@ footer {
     }
     header div{
         display: none;
+    }
+    header{
+        background-color: #00000000;
+        text-align: center;
     }
     .principal{
         margin-top: 140px;
@@ -444,6 +488,12 @@ footer {
     }
     #sobre img{
         width: 7rem;
+        margin: .2rem auto -.2rem auto;
+        border: solid 1px var(--color001);
+    }
+    
+    #sobreBox{
+        width: 350px
     }
     #conhecimento-icons{
         display: block;

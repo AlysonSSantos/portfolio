@@ -7,19 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1b9e49">
-    
+
     <!--SEO-->
     <!--Search Engine Optimization-->
     <title>Portifólio - Alyson Santos</title>
     <meta name="description" content="Portifólio de Alyson S. Santos">
     <!--SMO-->
     <!--Social Media Optimization-->
-    <meta property="og:title" content="Portifólio - Alyson Santos"/>
-    <meta property="og:site_name" content="Portifólio de Alyson S."/>
-    <meta property="og:description" content="Portifólio de Alyson S. Santos"/>
-    <meta property="og:url" content="https://portifolio-swart-ten.vercel.app/"/>
-    <meta property="og:image" content="https://lh3.googleusercontent.com/LwrquRfIYUELrRnKYEblJ041fE8NnZpxlhUDPi17jN9rvy4N1wdpZQvXtgEraWE2r5Om=s85"/>
-    <meta property="og:image:type" content="image/jpeg"/>    
+    <meta property="og:title" content="Portifólio - Alyson Santos" />
+    <meta property="og:site_name" content="Portifólio de Alyson S." />
+    <meta property="og:description" content="Portifólio de Alyson S. Santos" />
+    <meta property="og:url" content="https://portifolio-swart-ten.vercel.app/" />
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/LwrquRfIYUELrRnKYEblJ041fE8NnZpxlhUDPi17jN9rvy4N1wdpZQvXtgEraWE2r5Om=s85" />
+    <meta property="og:image:type" content="image/jpeg" />
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -44,15 +45,32 @@
 </head>
 
 <html>
-<body class="bg">
-    <header>
 
-        <div onclick="redirecionarAoHome()" href="#">Home</div>
-        <div onclick="redirecionarAoSobre()" href="#">Sobre</div>
-        <div onclick="redirecionarAConhecimentos()" href="#">Conhecimentos</div>
-        <div onclick="redirecionarAosProjetos()" href="#">Projetos</div>
-        <div onclick="redirecionarAoContate_me()" href="#">Contate-me</div>
-        <div onclick="abrirSidebar()" id="menu">Menu</div>
+<body class="bg">
+    <header id="header">
+
+        <nav id="desktopMenu">
+            <div onclick="redirecionarAoHome()" href="#">Home</div>
+            <div onclick="redirecionarAoSobre()" href="#">Sobre</div>
+            <div onclick="redirecionarAConhecimentos()" href="#">Conhecimentos</div>
+            <div onclick="redirecionarAosProjetos()" href="#">Projetos</div>
+            <div onclick="redirecionarAoContate_me()" href="#">Contate-me</div>
+            <div onclick="abrirSidebar()" id="menu">Menu</div>
+
+            <div id="iconsDesktopMenu">
+
+                <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
+                        <i class="fab fa-github"></a></i>
+                </div>
+                <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
+                        <i class="fab fa-instagram"></a></i>
+                </div>
+                <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
+                        <i class="fab fa-facebook"></i></a>
+                </div>
+
+            </div>
+        </nav>
 
         <nav id="menuLateral">
             <p onclick="fecharSidebar()" id="fecharMenu" href="#">X</p>
@@ -67,9 +85,9 @@
     <div class="principal">
 
         <div id="textoPrincipal">
-            <p class="principalDescricao">Hello world, eu sou</p>
+            <p class="principalDescricao">Olá, eu sou</p>
             <h1>Alyson S.<br> Santos</h1>
-            <p class="principalDescricao">Front-end developer,<br>UI designer. . .</p>
+            <p class="principalDescricao">Front-end developer &<br>UI designer. . .</p>
             <a href="https://www.instagram.com/alyson_s_/" target="_blank">Instagram</a>
         </div>
 
@@ -79,27 +97,32 @@
     <main>
         <section id="sobre">
             <h1 class="title">Sobre</h1>
-            <p class="destaque">Hello, World! Eu me chamo Alyson e gostaria de me apresentar: Tenho 16 anos, sou admirado em programação, na área do Front-end, desenvolvimento Web, mobile e design.</p>
-            <img id="devPhoto" src="pictures/euu.png" alt="Foto de Alyson Santos (casaco preto em uma simples selfie à luz do dia)">
-            <p class="destaque">Sou cristão, sonhador e um programador<br>que busca cada dia aprender mais.</p>
+            <div id="sobreBox">
+                <p class="destaque">Hello, World! Eu me chamo Alyson e gostaria de me apresentar: Tenho 16 anos, sou
+                    admirado em programação, na área do Front-end, desenvolvimento Web, mobile e design.</p>
+                <img id="devPhoto" src="pictures/euu.png"
+                    alt="Foto de Alyson Santos (casaco preto em uma simples selfie à luz do dia)">
+                <p class="destaque">Sou cristão, sonhador e um programador<br>que busca cada dia aprender mais.</p>
+            </div>
         </section>
 
-            <section id="conhecimentos">
-                <h1 class="title">Conhecimentos</h1>
-                <p class="destaque">"Um bom algotítimo é como uma faca afiada. Faz o que foi feito para fazer de maneira simples
-                    e eficiente"</p>
-                <div id="conhecimento-icons">
-                    <div id="html_icon"><i class="fab fa-html5"></i>
-                        <p id="conhecimento-html"><a id="link-html" href="#">HTML</a> semântico e responsivo</p>
-                    </div>
-                    <div id="css_icon"><i class="fab fa-css3"></i>
-                        <p id="conhecimento-css"><a id="link-css" href="#">CSS</a> moderno e atualizado</p>
-                    </div>
-                    <div id="js_icon"><i class="fab fa-js-square"></i>
-                        <p id="conhecimento-js"><a id="link-js" href="#">JavaScript</a> moderno e código limpo</p>
-                    </div>
+        <section id="conhecimentos">
+            <h1 class="title">Conhecimentos</h1>
+            <p class="destaque">"Um bom algotítimo é como uma faca afiada. Faz o que foi feito para fazer de maneira
+                simples
+                e eficiente"</p>
+            <div id="conhecimento-icons">
+                <div id="html_icon"><i class="fab fa-html5"></i>
+                    <p id="conhecimento-html"><a id="link-html" href="#">HTML</a> semântico e responsivo</p>
                 </div>
-            </section>
+                <div id="css_icon"><i class="fab fa-css3"></i>
+                    <p id="conhecimento-css"><a id="link-css" href="#">CSS</a> moderno e atualizado</p>
+                </div>
+                <div id="js_icon"><i class="fab fa-js-square"></i>
+                    <p id="conhecimento-js"><a id="link-js" href="#">JavaScript</a> moderno e código limpo</p>
+                </div>
+            </div>
+        </section>
 
         <section id="projetos">
             <h1 class="title">Projetos</h1>
@@ -108,31 +131,38 @@
                 <div id="projetoATM">
                     <h2 class="subtitle">ATM Simulator - C language</h2>
                     <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
-                    <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller Machine é
-                        um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do mesmo
-                        (em breve no <a class="link" href="https://github.com/AlysonSSantos" target="_blank">github</a>).
+                    <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller
+                        Machine é
+                        um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do
+                        mesmo
+                        (em breve no <a class="link" href="https://github.com/AlysonSSantos"
+                            target="_blank">github</a>).
                     </p>
                 </div>
 
-            <div id="projetoLoja">
-                <h2 class="subtitle">E-Commerce com login</h2>
-                <div id="image"> <img src="pictures/basket image.png" alt="Imagem de uma cesta de compras minimalista">
+                <div id="projetoLoja">
+                    <h2 class="subtitle">E-Commerce com login</h2>
+                    <div id="image"> <img src="pictures/basket image.png"
+                            alt="Imagem de uma cesta de compras minimalista">
+                    </div>
+                    <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript,
+                        porém
+                        as ideias aumentaram e tornou-se um login para um E-commerce! Com a possibilidade de login com o
+                        google para usuários de teste. (Projeto ainda em andamento - Presente no <a class="link"
+                            href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
                 </div>
-                <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript, porém
-                    as ideias aumentaram e tornou-se um login para um E-commerce! Com a possibilidade de login com o
-                    google para usuários de teste. (Projeto ainda em andamento - Presente no <a class="link"
-                        href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
             </div>
-        </div>
 
-        <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para o
-            aprendizado.</p>
-        <h2 class="subtitle">Continua...</h2>
+            <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para
+                o
+                aprendizado.</p>
+            <h2 class="subtitle">Continua...</h2>
         </section>
 
         <section id="contatar">
             <h1 class="title">Contate-me</h1>
-            <p class="destaque">Para ter seu site feito por mim, ou se deseja falar comigo, a seguir o meu e-mail e após as
+            <p class="destaque">Para ter seu site feito por mim, ou se deseja falar comigo, a seguir o meu e-mail e após
+                as
                 redes sociais.</p>
             <h2 class="subtitle">alysonsantos080@gmail.com</h2>
             <p class="destaque">Para me ajudar com um café - Chave PIX: 03340529043 ou o e-mail acima :)</p>
@@ -144,14 +174,19 @@
             </div>
         </section>
     </main>
+    <span class="mobileBottomNavigation">
+        <nav id="bottomMenu">
+            
+        </nav>
+    </span>
     <footer>
         <div class="rodape">Onde me encontrar:</div>
         <div id="footer-icons">
-            <div id="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
+            <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
                     <i class="fab fa-github"></a></i></div>
-            <div id="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
+            <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
                     <i class="fab fa-instagram"></a></i></div>
-            <div id="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
+            <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
                     <i class="fab fa-facebook"></i></a></div>
         </div>
     </footer>
@@ -173,5 +208,11 @@
         delay: 210
     })
 </script>
+
+<!--
+<script>
+    fixarDesktopMenu()
+</script>
+-->
 
 </html>
