@@ -26,12 +26,14 @@ const redirecionarAoContate_me = () => {
     location.href="#contatar"
 }
 
-/*
+
 const fixarDesktopMenu = () =>{
-    if(window.scrollY > 200){
-        document.getElementById("header").style.position="fixed"
-    }else{
-        document.getElementById("header").style.position="relative"
+    window.onscroll = () =>{
+        var top = document.documentElement.scrollTop
+        if(top > 636){
+            document.getElementById("BottomNavigation").style.display="block"
+        }else{
+            document.getElementById("BottomNavigation").style.display="none"
+        }
     }
 }
-*/

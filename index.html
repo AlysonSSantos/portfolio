@@ -86,7 +86,7 @@
 
         <div id="textoPrincipal">
             <p class="principalDescricao">Olá, eu sou</p>
-            <h1>Alyson S.<br> Santos</h1>
+            <h1>Alyson da Silva<br>dos Santos</h1>
             <p class="principalDescricao">Front-end developer &<br>UI designer. . .</p>
             <a href="https://www.instagram.com/alyson_s_/" target="_blank">Instagram</a>
         </div>
@@ -166,29 +166,68 @@
                 redes sociais.</p>
             <h2 class="subtitle">alysonsantos080@gmail.com</h2>
             <p class="destaque">Para me ajudar com um café - Chave PIX: 03340529043 ou o e-mail acima :)</p>
-            <div id="animated-icon">
-                <lord-icon src="https://cdn.lordicon.com/anihkfxp.json" trigger="loop"
-                    colors="primary:#4D5ACB,secondary:#929cf1" style="width:200px;height:200px;margin:auto">
-                </lord-icon>
-                <p class="destaque">Até logo! Deus abençoe.</p>
+            <div id="socialMediaInformation">
+                <div id="facebookInfo">
+                    <p class="socialMediaLink"><img src="pictures/facebook.png" alt="Facebook logo">Alyson Santos</p>
+                </div>
+                <div id="instagramInfo">
+                    <p class="socialMediaLink"><img src="pictures/instagram.png" alt="Instagram Logo">alyson_s_</p>
+                </div>
+                <div id="linkedinInfo">
+                    <p class="socialMediaLink"><img src="pictures/linkedin.png" alt="Linkedin logo">Alyson Santos</p>
+                </div>
+                <div id="githubInfo">
+                    <p class="socialMediaLink"><img src="pictures/GitHub-Mark-Light-120px-plus.png" alt="github logo">AlysonSSantos</p>
+                </div>
             </div>
+            <p class="destaque">Até logo! Deus abençoe.</p>
         </section>
     </main>
-    <span class="mobileBottomNavigation">
-        <nav id="bottomMenu">
-            
-        </nav>
+    <span id="BottomNavigation">
+        <div onclick="redirecionarAoHome()" id="homeIcon">
+            <img src="pictures/casa.png" alt="Icon para o home">
+            <p>Home</p>
+        </div>
+        <div onclick="redirecionarAoSobre()" id="informationIcon">
+            <img src="pictures/information (2).png" alt="Icon para mais informações">
+            <p>Sobre</p>
+        </div>
+        <div onclick="redirecionarAConhecimentos()" id="conhecimentosIcon">
+            <img src="pictures/reading.png" alt="conhecimentos icon">
+            <p>Conhecimentos</p>
+        </div>
+        <div onclick="redirecionarAosProjetos()" id="projetosIcon">
+            <img src="pictures/code.png" alt="redirecionar ao Projetos icon">
+            <p>Projetos</p>
+        </div>
+        <div onclick="redirecionarAoContate_me()" id="contactIcon">
+            <img src="pictures/phone-call.png" alt="Contate-me icon">
+            <p>Contate-me</p>
+        </div>
     </span>
     <footer>
-        <div class="rodape">Onde me encontrar:</div>
-        <div id="footer-icons">
-            <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
-                    <i class="fab fa-github"></a></i></div>
-            <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
-                    <i class="fab fa-instagram"></a></i></div>
-            <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
-                    <i class="fab fa-facebook"></i></a></div>
+        <span id="footerCopyright">
+            <p>&#169 Alyson S. Santos</p>
+        </span>
+
+        <div id="footerText">
+            <p>Contate-me:</p>
+            <div id="footer-icons">
+                <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
+                        <i class="fab fa-github"></a></i></div>
+                <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
+                        <i class="fab fa-instagram"></a></i></div>
+                <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
+                        <i class="fab fa-facebook"></i></a></div>
+            </div>
         </div>
+
+        <div id="footerAsideIcon">
+            <lord-icon src="https://cdn.lordicon.com/dtgezzsi.json" trigger="loop"
+                colors="primary:#4d5acb,secondary:#7184ff" style="width:250px;height:250px">
+            </lord-icon>
+        </div>
+        
     </footer>
 </body>
 <script>
@@ -209,10 +248,10 @@
     })
 </script>
 
-<!--
+
 <script>
     fixarDesktopMenu()
 </script>
--->
+
 
 </html>

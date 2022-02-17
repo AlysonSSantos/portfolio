@@ -10,6 +10,16 @@
 :root {
     --color001: #4D5ACB;
     --color002: #7184FF;
+    --color003: #ffffff13;
+    --color: #ab75ff;
+    --coloor: #6979ff;
+    /*Gradiente icons
+
+    rgba(171, 117, 255, 1)
+    e
+    rgba(105, 121, 255, 1)
+
+    */
 }
 
 html {
@@ -38,7 +48,7 @@ html {
     border-radius: 2px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: #31374bc4;
 }
 
@@ -47,7 +57,7 @@ header {
     padding: 15px 0 15px 1rem;
     margin: .5rem auto;
     width: 95%;
-    background-color: #ffffff13;
+    background-color: var(--color003);
     border-radius: 1rem;
     text-align: left;
 }
@@ -61,19 +71,19 @@ header div {
     color: #fff;
 }
 
-header div:hover{
+header div:hover {
     color: var(--color001);
     text-shadow: 0 0 1rem #ffffff;
     cursor: pointer;
     transition: .3s;
 }
 
-#iconsDesktopMenu{
+#iconsDesktopMenu {
     float: right;
     margin: auto 1rem auto auto;
 }
 
-#iconsDesktopMenu i{
+#iconsDesktopMenu i {
     margin: auto -1rem;
     font-size: 1.1rem;
 }
@@ -96,6 +106,7 @@ header div:hover{
     padding: 1rem;
     color: #fff;
     text-shadow: none;
+    margin: 1rem auto -.8rem auto;
 }
 
 #menuLateral div:hover {
@@ -127,35 +138,66 @@ header div:hover{
     position: absolute;
     width: 2.5rem;
     padding: .5rem 0;
-    margin: -2rem .5rem;
+    border: solid var(--color002) 2px;
+    border-radius: .6rem;
+    margin: -2rem .6rem;
     background: #972b2b;
-    border-radius: .3rem;
     overflow: hidden;
     transition: .3s;
     cursor: pointer;
     display: none;
 }
 
-.bottomMenu{
-    display: block;
+#BottomNavigation {
+    background-color: #000000d3;
+    width: 35vw;
+    height: 9vh;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
     position: fixed;
-    background:#9b5959;
-    width: 100%;
-    height: 10vh;
+    margin: auto;
+    border-radius: 1rem;
+    text-align: center;
+    display: none;
+}
+
+#BottomNavigation div img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: .4rem 1.5rem;
+    text-align: center;
+}
+
+#BottomNavigation div img:hover {
+    cursor: pointer;
+}
+
+#BottomNavigation div {
+    display: inline-block;
+}
+
+#BottomNavigation p {
+    font-size: .9rem;
+    margin: -.65rem auto auto auto;
+}
+
+#projetosIcon img {
+    width: 1.9rem
 }
 
 .principal {
     text-align: center;
-    margin: 26vh auto 2px auto;
+    margin: 27.5vh auto 2px auto;
     transition: .5s;
 }
 
-#textoPrincipal{
+#textoPrincipal {
     text-align: left;
     margin: auto 8rem;
 }
 
-.principalDescricao{
+.principalDescricao {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
@@ -187,7 +229,7 @@ header div:hover{
     cursor: pointer;
 }
 
-.principal img{
+.principal img {
     width: 15rem;
     height: 15rem;
     margin: -14rem 10rem;
@@ -197,7 +239,7 @@ header div:hover{
 
 main {
     background-color: #272727;
-    border-radius: 10px;
+    border-radius: 12px 12px 0 0;
     margin-top: 270px;
     padding: .5px
 }
@@ -224,17 +266,17 @@ h1.title {
     text-align: center;
 }
 
-#sobre{
+#sobre {
     text-align: center;
 }
 
-#sobre img{
+#sobre img {
     width: 10rem;
     margin: 1.5rem auto;
     border-radius: 50%;
 }
 
-#sobreBox{
+#sobreBox {
     width: 800px;
     margin: auto;
     background-color: #272727;
@@ -283,8 +325,8 @@ h1.title {
     text-align: center;
 }
 
-#html_icon i{
-    background-image:linear-gradient(#e2f2ff, #E44D26) ;
+#html_icon i {
+    background-image: linear-gradient(#e2f2ff, #E44D26);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
@@ -297,28 +339,28 @@ h1.title {
     margin-left: 1.5rem;
 }
 
-#css_icon i{
-    background-image:linear-gradient(#e2f2ff, #1A73BA) ;
+#css_icon i {
+    background-image: linear-gradient(#e2f2ff, #1A73BA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: backgroundAnimation 7s ease infinite;
 }
 
-#js_icon{
+#js_icon {
     font-size: 5rem;
     text-align: center;
 }
 
-#js_icon i{
-    background-image:linear-gradient(#ffffe2, #F1C40F) ;
+#js_icon i {
+    background-image: linear-gradient(#ffffe2, #F1C40F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: backgroundAnimation 7s ease infinite
 }
 
-.projetos{
+.projetos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -326,11 +368,11 @@ h1.title {
     margin: 4rem;
 }
 
-.subtitle{
+.subtitle {
     text-align: center;
 }
 
-#projetoATM{
+#projetoATM {
     max-width: 15rem;
     padding: .5rem;
     align-self: baseline;
@@ -341,7 +383,17 @@ h1.title {
     max-height: 24rem;
 }
 
-#projetoLoja{
+.terminal-icon{
+    text-align: center;
+}
+
+.terminal-icon i{
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+#projetoLoja {
     max-width: 15rem;
     padding: .5rem;
     margin-left: 2rem;
@@ -352,13 +404,13 @@ h1.title {
     max-height: 24rem;
 }
 
-#projetoATM:hover{
+#projetoATM:hover {
     box-shadow: 0 0 1.5rem .1rem white;
     transition: .3s;
     cursor: pointer;
 }
 
-#projetoLoja:hover{
+#projetoLoja:hover {
     box-shadow: 0 0 1.5rem .1rem white;
     transition: .3s;
     cursor: pointer;
@@ -377,26 +429,85 @@ h1.title {
     transition: .4s;
 }
 
-.terminal-icon {
-    text-align: center;
-    font-size: 45px;
-    margin: 1.5rem auto;
+.socialMediaLink{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 24rem;
+    margin: .4rem auto;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-#image{
+.socialMediaLink img {
+    width: 1.8rem;
+    text-align: center;
+    margin: auto 1rem;
+}
+
+#socialMediaInformation {
+    max-width: 12rem;
+    text-align: center;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#image {
     text-align: center;
     margin-bottom: -.8rem;
 }
 
-#image img{
+#image img {
     width: 5rem;
     height: 5rem;
 }
 
-.rodape {
-    text-align: center;
-    font-weight: lighter;
+footer::before {
+    content: "";
+    display: block;
+    width: 85%;
+    height: .1px;
+    margin: auto;
+    background-color: rgb(112, 112, 112);
+}
+
+footer {
+    padding: 10px;
+    background-color: #272727;
+    text-align: left;
+    text-indent: 10%;
+}
+
+#footer-icons {
+    font-size: 1.5rem;
+
+}
+
+#footerCopyright {
+    text-align: left;
     text-transform: uppercase;
+}
+
+#footerText {
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+.github-icon {
+    display: inline-block;
+}
+
+.facebook-icon {
+    display: inline-block
+}
+
+.instagram-icon {
+    display: inline-block;
 }
 
 .github-icon i:hover {
@@ -414,114 +525,122 @@ h1.title {
     transition: .2s;
 }
 
-#animated-icon {
-    text-align: center;
+#footerAsideIcon {
+    text-align: right;
+    margin: -10rem 5rem auto auto;
 }
 
-#footer-icons {
-    display: flex;
-    margin: 7px auto;
-    max-width: 120px;
-    font-size: 27px;
-    justify-content: space-between;
-}
+@media screen and (max-width: 750px) {
+    .mobileBottomNavigation {
+        display: block;
+    }
 
-footer {
-    padding: 10px;
-    background-color: #5c5b5ba1;
-    text-align: center;
-}
+    #bottomMenu {
+        display: block;
+    }
 
-@media screen and (max-width: 750px){
-    .mobileBottomNavigation{
+    #menu {
         display: block;
     }
-    #bottomMenu{
+
+    #menuLateral {
         display: block;
     }
-    #menu{
-        display: block;
-    }
-    #menuLateral{
-        display: block;
-    }
-    #fecharMenu{
+
+    #fecharMenu {
         display: block;
         right: .7rem;
         padding: 4px 10px;
     }
-    header div{
+
+    header div {
         display: none;
     }
-    header{
+
+    header {
         background-color: #00000000;
         text-align: center;
     }
-    .principal{
+
+    .principal {
         margin-top: 140px;
         margin-bottom: -50px;
         text-align: center;
     }
-    .principal a{
+
+    .principal a {
         margin: .5rem auto;
         text-align: center;
     }
-    #imagemPrincipal img{
+
+    #imagemPrincipal img {
         display: none;
     }
-    #textoPrincipal{
+
+    #textoPrincipal {
         text-align: center;
         background-color: #00000011;
         padding: 1rem;
         border-radius: .5rem;
         margin: auto;
     }
-    .principalDescricao{
+
+    .principalDescricao {
         font-size: 1.08rem;
     }
-    #textoPrincipal h1{
+
+    #textoPrincipal h1 {
         margin-left: auto;
         margin-right: auto;
         font-size: 2rem;
         line-height: 35px;
         text-align: center;
     }
-    #sobre img{
+
+    #sobre img {
         width: 7rem;
         margin: .2rem auto -.2rem auto;
         border: solid 1px var(--color001);
     }
-    
-    #sobreBox{
+
+    #sobreBox {
         width: 350px
     }
-    #conhecimento-icons{
+
+    #conhecimento-icons {
         display: block;
     }
-    .projetos{
+
+    .projetos {
         display: block;
     }
-    #projetoATM{
+
+    #projetoATM {
         text-align: center;
         margin: auto auto 1rem auto;
     }
-    #projetoLoja{
+
+    #projetoLoja {
         text-align: center;
         margin: auto;
     }
+    #footerAsideIcon{
+        display: block;
+        text-align: left;
+        margin: -2rem auto auto -3rem;
+    }
 }
 
-@keyframes backgroundAnimation{
-    0%{
+@keyframes backgroundAnimation {
+    0% {
         background-position: 0% 100%;
     }
 
-    50%{
+    50% {
         background-position: 100% 30%
     }
 
-    100%{
+    100% {
         background-position: 0% 100%;
     }
 }
-
