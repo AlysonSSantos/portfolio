@@ -531,14 +531,6 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-    .mobileBottomNavigation {
-        display: block;
-    }
-
-    #bottomMenu {
-        display: block;
-    }
-
     #menu {
         display: block;
     }
@@ -626,7 +618,7 @@ footer {
     }
     #footer-icons{
         margin: .3rem auto auto 2rem;
-        max-width: 8rem;
+        max-width: 10rem;
     }
     #footerText{
      text-align: left;
@@ -639,7 +631,13 @@ footer {
     }
     #footerAsideIcon lord-icon{
         text-align: left;
-        margin: auto 1rem;
+        margin: auto 1.5rem;
+    }
+    #BottomNavigation{
+        width: 90vw;
+        bottom: 0;
+        padding: .5rem;
+
     }
 }
 
