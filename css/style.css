@@ -469,9 +469,9 @@ footer::before {
     content: "";
     display: block;
     width: 85%;
-    height: .1px;
+    height: 1px;
     margin: auto;
-    background-color: rgb(112, 112, 112);
+    background-color: #ffffff;
 }
 
 footer {
@@ -527,7 +527,7 @@ footer {
 
 #footerAsideIcon {
     text-align: right;
-    margin: -10rem 5rem auto auto;
+    margin: -8rem 8rem auto auto;
 }
 
 @media screen and (max-width: 750px) {
@@ -625,7 +625,12 @@ footer {
         margin: auto;
     }
     #footer-icons{
-        margin: .3rem auto;
+        margin: .3rem auto auto 2rem;
+        max-width: 8rem;
+    }
+    #footerText{
+     text-align: left;
+     margin-left: 1rem;
     }
     #footerAsideIcon{
         display: block;
@@ -633,9 +638,8 @@ footer {
         margin: -2rem auto auto -3rem;
     }
     #footerAsideIcon lord-icon{
-        width: 1rem;
         text-align: left;
-        margin-left: 2rem;
+        margin: auto 2rem;
     }
 }
 
