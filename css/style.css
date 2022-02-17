@@ -635,7 +635,7 @@ footer {
     }
     #BottomNavigation{
         width: 90vw;
-        bottom: 0;
+        bottom: .5rem;
         padding: .5rem;
 
     }
