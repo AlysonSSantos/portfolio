@@ -596,7 +596,7 @@ footer {
     }
 
     #sobreBox {
-        width: 350px
+        width: 300px
     }
 
     #conhecimento-icons {
@@ -617,7 +617,8 @@ footer {
         margin: auto;
     }
     footer{
-        text-align: left;
+        text-align: center;
+        margin: auto;
     }
     #footerAsideIcon{
         display: none;
