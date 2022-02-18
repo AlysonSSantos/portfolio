@@ -626,6 +626,12 @@ footer {
         flex-direction: row;
         margin: 1rem 25%;
     }
+    #footerCopyright{
+        text-align: center;
+    }
+    #footerText{
+        text-align: center;
+    }
     #footerAsideIcon{
         display: none;
     }
