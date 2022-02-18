@@ -483,7 +483,6 @@ footer {
 
 #footer-icons {
     font-size: 1.5rem;
-
 }
 
 #footerCopyright {
@@ -617,8 +616,15 @@ footer {
         margin: auto;
     }
     footer{
-        text-align: center;
+        text-align: left;
         margin: auto;
+    }
+    #footer-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+        margin: 1rem 10rem;
     }
     #footerAsideIcon{
         display: none;
