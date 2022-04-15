@@ -50,6 +50,13 @@ const redirecionarAoContate_me = () => {
 const fixarDesktopMenu = () =>{
     window.onscroll = () =>{
         var top = document.documentElement.scrollTop
+
+        window.onload = function() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                document.getElementById("BottomNavigation").style.display="none"
+            }
+        }
+
         if(top > 636){
             document.getElementById("BottomNavigation").style.display="block"
         }else{
