@@ -644,6 +644,7 @@ footer {
     #BottomNavigation div img{
         width: 1.3rem;
         height: 1.3rem;
+        margin: .4rem 1rem;
     }
     #BottomNavigation p{
         display: none;
