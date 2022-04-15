@@ -642,6 +642,10 @@ footer {
         border-radius: 1rem 1rem 0 0;
         background: #131212;
     }
+    #BottomNavigation div img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 @keyframes backgroundAnimation {
