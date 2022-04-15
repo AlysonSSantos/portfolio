@@ -636,9 +636,11 @@ footer {
         display: none;
     }
     #BottomNavigation{
-        width: 90vw;
-        bottom: .5rem;
-        padding: .5rem;
+        width: 100%;
+        bottom: 0rem;
+        padding: .8rem 0;
+        border-radius: 1rem 1rem 0 0;
+        background: #131212;
     }
 }
 
