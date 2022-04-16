@@ -527,7 +527,7 @@ footer {
 
 @media screen and (max-width: 850px) {
     main{
-        margin: auto;
+        margin: 20rem auto auto auto;
     }
     #menu {
         display: block;
