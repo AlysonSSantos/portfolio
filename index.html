@@ -109,8 +109,7 @@
         <section id="conhecimentos">
             <h1 class="title">Conhecimentos</h1>
             <p class="destaque">"Um bom algotítimo é como uma faca afiada. Faz o que foi feito para fazer de maneira
-                simples
-                e eficiente"</p>
+                simples e eficiente"</p>
             <div id="conhecimento-icons">
                 <div id="html_icon"><i class="fab fa-html5"></i>
                     <p id="conhecimento-html"><a id="link-html" href="#">HTML</a> semântico e responsivo</p>
@@ -146,38 +145,35 @@
                             alt="Imagem de uma cesta de compras minimalista">
                     </div>
                     <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript,
-                        porém
-                        as ideias aumentaram e tornou-se um login para um E-commerce! Com a possibilidade de login com o
-                        google para usuários de teste. (Projeto ainda em andamento - Presente no <a class="link"
+                        porém, as ideias aumentaram e tornou-se um login para um E-commerce; Visando a possibilidade de login com o google para usuários de teste. (Presente no <a class="link"
                             href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
                 </div>
             </div>
 
             <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para
-                o
-                aprendizado.</p>
+                o aprendizado.</p>
             <h2 class="subtitle">Continua...</h2>
         </section>
 
         <section id="contatar">
             <h1 class="title">Contate-me</h1>
             <p class="destaque">Para ter seu site feito por mim, ou se deseja falar comigo, a seguir o meu e-mail e após
-                as
-                redes sociais.</p>
+                as redes sociais.</p>
             <h2 class="subtitle">alysonsantos080@gmail.com</h2>
             <p class="destaque">Para me ajudar com um café, Chave PIX: 03340529043 ou o e-mail acima :)</p>
             <div id="socialMediaInformation">
-                <div id="facebookInfo">
+                <div onclick="redirect('facebook')" id="facebookInfo">
                     <p class="socialMediaLink"><img src="pictures/facebook.png" alt="Facebook logo">Alyson Santos</p>
                 </div>
-                <div id="instagramInfo">
+                <div onclick="redirect('instagram')" id="instagramInfo">
                     <p class="socialMediaLink"><img src="pictures/instagram.png" alt="Instagram Logo">alyson_s_</p>
                 </div>
-                <div id="linkedinInfo">
+                <div onclick="redirect('linkedin')" id="linkedinInfo">
                     <p class="socialMediaLink"><img src="pictures/linkedin.png" alt="Linkedin logo">Alyson Santos</p>
                 </div>
-                <div id="githubInfo">
-                    <p class="socialMediaLink"><img src="pictures/GitHub-Mark-Light-120px-plus.png" alt="github logo">AlysonSSantos</p>
+                <div onclick="redirect('github')" id="githubInfo">
+                    <p class="socialMediaLink"><img src="pictures/GitHub-Mark-Light-120px-plus.png"
+                            alt="github logo">AlysonSSantos</p>
                 </div>
             </div>
             <p class="destaque">Até logo! Deus abençoe.</p>
@@ -213,24 +209,25 @@
         <div id="footerText">
             <p>Contate-me:</p>
         </div>
-            <div id="footer-icons">
-                <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
-                        <i class="fab fa-github"></a></i></div>
-                <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
-                        <i class="fab fa-instagram"></a></i></div>
-                <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
-                        <i class="fab fa-facebook"></i></a></div>
-            </div>
+        <div id="footer-icons">
+            <div class="github-icon"><a href="https://github.com/AlysonSSantos" target="_blank">
+                    <i class="fab fa-github"></a></i></div>
+            <div class="instagram-icon"><a href="https://www.instagram.com/alyson_s_/" target="_blank">
+                    <i class="fab fa-instagram"></a></i></div>
+            <div class="facebook-icon"><a href="https://www.facebook.com/alyson.santos.07/" target="_blank">
+                    <i class="fab fa-facebook"></i></a></div>
+        </div>
 
         <div id="footerAsideIcon">
             <lord-icon src="https://cdn.lordicon.com/dtgezzsi.json" trigger="loop"
                 colors="primary:#4d5acb,secondary:#7184ff" style="width:10rem;height:10rem">
             </lord-icon>
         </div>
-        
+
     </footer>
 </body>
 <script>
+
     ScrollReveal().reveal('.destaque', {
         delay: 210
     })

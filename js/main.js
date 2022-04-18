@@ -58,3 +58,24 @@ const fixarDesktopMenu = () =>{
         }
     }
 }
+
+const redirect = (way) =>{
+    switch(way){
+        case "facebook":
+            window.open("https://www.facebook.com/alyson.santos.07/", "_blank")
+        break
+
+        case "instagram":
+            window.open("https://www.instagram.com/alyson_s_/", "_blank")
+        break
+
+        case "linkedin":
+            window.open("https://www.linkedin.com/in/alyson-santos-54995322a/", "_blank")
+        break
+
+        case "github":
+            window.open("https://github.com/AlysonSSantos", "_blank")
+        break
+    }
+       
+}
