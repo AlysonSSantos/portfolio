@@ -616,21 +616,24 @@ footer {
         margin: auto;
     }
     footer{
-        text-align: left;
-        margin: auto;
+        text-align: center;
+        margin: auto auto 4rem auto;
     }
     #footer-icons{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         flex-direction: row;
-        margin: 1rem 25%;
+        width: 5.5rem;
+        margin: auto;
     }
-    #footerCopyright{
+    #footerCopyright p{
         text-align: center;
+        margin: auto auto auto -3rem;
     }
     #footerText{
         text-align: center;
+        margin: auto auto auto -2.5rem;
     }
     #footerAsideIcon{
         display: none;
