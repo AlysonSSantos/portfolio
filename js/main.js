@@ -1,3 +1,4 @@
+
 const abrirSidebar = () => {
     document.getElementById("menuLateral").style.width="15rem";
 }

@@ -99,6 +99,7 @@ header div:hover {
     padding: 3.5rem 0 1rem 0;
     transition: .3s;
     display: none;
+    z-index: 10;
 }
 
 #menuLateral div {
