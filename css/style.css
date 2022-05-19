@@ -234,11 +234,10 @@ header div:hover {
     float: right;
 }
 
-
 main {
     background-color: #272727;
     border-radius: 12px 12px 0 0;
-    
+    margin-top: 125px;
     padding: .5rem;
 }
 
@@ -281,6 +280,12 @@ h1.title {
     box-shadow: 0 0 2rem -1rem var(--color001);
     border-radius: 1rem;
     padding: 1rem;
+}
+
+.mean{
+    display: inline-block;
+    cursor: pointer;
+    color: var(--coloor)
 }
 
 #conhecimento-icons {
@@ -529,7 +534,7 @@ footer {
 
 @media screen and (max-width: 850px) {
     main{
-        margin: 20rem auto auto auto;
+        margin: 12.1rem auto auto auto;
     }
     #menu {
         display: block;
