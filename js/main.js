@@ -32,7 +32,7 @@ const redirecionarAConhecimentos = () => {
 }
 
 const redirecionarAosProjetos = () => {
-    location.href="#projetos"
+    location.href="#projetosApresentados"
     document.getElementById("bottomNavTextProjetos").style.color="#4D5ACB"
     const setColor = setTimeout(function(){
         document.getElementById("bottomNavTextProjetos").style.color="#fff"
