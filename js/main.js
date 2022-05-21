@@ -77,6 +77,29 @@ const redirect = (way) =>{
         case "github":
             window.open("https://github.com/AlysonSSantos", "_blank")
         break
+        case "githubRepo":
+            window.open("https://github.com/AlysonSSantos?tab=repositories", "_blank")
+        break
+        case "websitelimpeza":
+            window.open("https://info.matiasprocleaning.com/contact-us", "_blank")
+        break
+        case "listadegastos":
+            window.open("http://lista-de-gastos.vercel.app/", "_blank")
+        break
+        case "login":
+            window.open("https://login-seven-mu.vercel.app/", "_blank")
+        break
+        case "pedrapapeltesoura":
+            window.open("https://pedra-papel-tesoura-beta.vercel.app/", "_blank")
+        break
+        case "pokedex":
+            window.open("https://pokedex-l2d20g23o-alysonssantos.vercel.app/", "_blank")
+        break
     }
        
 }
+
+
+
+
+

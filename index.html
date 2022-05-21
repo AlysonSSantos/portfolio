@@ -88,7 +88,7 @@
             <p class="principalDescricao">Olá, eu sou</p>
             <h1>Alyson da Silva<br>dos Santos</h1>
             <p class="principalDescricao">Front-end developer &<br>designer. . .</p>
-            <a href="https://www.instagram.com/alyson_s_/" target="_blank">Instagram</a>
+            <div class="ctaButton">Contate-me</div>
         </div>
 
         <div id="imagemPrincipal"><img src="pictures/Code_perspective_matte-removebg-preview.png" alt="code icone">
@@ -124,23 +124,62 @@
             </div>
         </section>
 
-        <section id="projetos">
+        <section id="projetosApresentados">
+
             <h1 class="title">Projetos</h1>
+
             <p class="destaque">A programação proporciona a criação de inúmeras ideias, aqui estão algumas das minhas:</p>
+
             <div class="projetos">
-                <div id="projetoATM">
+
+                <h2 class="projetosTipo">Front-end</h2>
+                
+                <div class="front-end">
+
+                    <div onclick="redirect('websitelimpeza')" class="projetosCard">
+                            <h2 class="subtitle">Landing-page para empresa dos EUA</h2>
+                            <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
+                            <p class="destaque">Sendo meu primeiro trabalho como freelancer, formatei e melhorei uma landing-page para captação de leads de uma empresa de limpeza da cidade Boston. Com um toque de código, foi formatada, trazendo um design moderno e clean (sem trocadilhos), melhorada e recebeu novas funcionalidades.
+                            Este projeto está no ar e funcionando muito bem! 
+                            </p>
+        
+                    </div>
+    
+                    <div onclick="redirect('listadegastos')" class="projetosCard">
+    
+                        <h2 class="subtitle">Lista de gastos com JS</h2>
+                        <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
+                        <p class="destaque">Desenvolvido no período de um curso de JavaScript (Danki Code), a "Lista de compras" consiste em o usuário adicionar o nome e preço à produtos, podendo assim ter controle exatamente sobre o preço de cada um.
+                        </p>
+    
+                    </div>
+    
+                    </div>
+
+                    <div class="navegacaoProjetos">
+                        <span class="buttonPrev" stack="frontPrev">Anterior</span>
+                        <span class="buttonNext" stack="frontNext">Próximo</span>
+                    </div>
+
+                <h2 class="projetosTipo">Back-end</h2>
+                <div class="back-end">
+
+                <div onclick="redirect('githubRepo')" class="projetosCard">
+
                     <h2 class="subtitle">ATM Simulator - C language</h2>
                     <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
-                    <p class="destaque">Sendo meu primeiro projeto independende de programação, o Automated Teller
+                    <p class="destaque">Sendo meu primeiro projeto independente de programação, o Automated Teller
                         Machine é
                         um programa em linguagem C, que busca simular um caixa eletrônico e algumas funções simples do
                         mesmo
                         (em breve no <a class="link" href="https://github.com/AlysonSSantos"
                             target="_blank">github</a>).
                     </p>
+
                 </div>
 
-                <div id="projetoLoja">
+                <div onclick="redirect('login')" class="projetosCard">
+
                     <h2 class="subtitle">E-Commerce com login</h2>
                     <div id="image"> <img src="pictures/basket image.png"
                             alt="Imagem de uma cesta de compras minimalista">
@@ -148,11 +187,44 @@
                     <p class="destaque">Iniciou-se com a ideia de realizar uma tela de login, validada com JavaScript,
                         porém, as ideias aumentaram e tornou-se um login para um E-commerce; Visando a possibilidade de login com o google para usuários de teste. (Presente no <a class="link"
                             href="https://github.com/AlysonSSantos/login" target="_blank">github</a>)</p>
+
                 </div>
+                </div>
+
+                <div class="navegacaoProjetos">
+                    <span class="buttonPrev" stack="backPrev">Anterior</span>
+                    <span class="buttonNext" stack="backNext">Próximo</span>
+                </div>
+
+                <h2 class="projetosTipo">Games</h2>
+                <div class="games">
+
+                <div onclick="redirect('pedrapapeltesoura')" class="projetosCard">
+                    <h2 class="subtitle">Pedra, Papel ou tesoura</h2>
+                    <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
+                    <p class="destaque">O clássico jogo de pedra, papel ou tesoura na web, onde o jogador enfrenta uma inteligência artificial capaz de escolher aleatoriamente (e muito bem!) entre pedra, papel ou tesoura. Proporcionando assim, um jogo disputado e com um placar dinâmico que conta o número de vitórias de cada um.
+                    </p>
+
+                </div>
+
+                <div onclick="redirect('pokedex')" class="projetosCard">
+                    <h2 class="subtitle">Pokedex - PokeAPI</h2>
+                    <div class="terminal-icon"><i class="fas fa-terminal"></i></div>
+                    <p class="destaque">Para os amantes de pokemón, ou de API's, aqui vai um projeto sobre os dois. Uma simples pokedex onde o usuário pode escolher a quantidade de pokemóns que deseja ver, e essa quantidade vem através dos dados da pokeAPI, para assim, usar a requisição de API e adicionar essa experiência em meu portfólio.
+                    </p>
+
+                </div>
+                </div>
+
+            </div>
+            
+            <div class="navegacaoProjetos">
+                <span class="buttonPrev" stack="games">Anterior</span>
+                <span class="buttonNext" stack="games">Próximo</span>
             </div>
 
-            <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários clones de sites para
-                o aprendizado.</p>
+            <p class="destaque">E esse Portifólio faz parte desses projetos, juntamente com vários projetos práticos para
+                o aprendizado (estes são uma simples introdução).</p>
             <h2 class="subtitle">Continua...</h2>
         </section>
 
@@ -228,6 +300,37 @@
     </footer>
 </body>
 <script>
+    var buttonPrev = document.querySelectorAll(".buttonPrev")
+    var buttonNext = document.querySelectorAll(".buttonNext")
+    var projetosCard = document.querySelectorAll(".projetosCard")
+
+    buttonNext[0].addEventListener("click", () =>{
+            projetosCard[0].style.marginLeft="-30rem" 
+    })
+
+        buttonPrev[0].addEventListener("click", () =>{
+        projetosCard[0].style.marginLeft="0"
+    })
+
+
+    buttonNext[1].addEventListener("click", () =>{
+            projetosCard[2].style.marginLeft="-30rem"
+    })
+
+        buttonPrev[1].addEventListener("click", () =>{
+        projetosCard[2].style.marginLeft="0"
+    })
+
+
+    buttonNext[2].addEventListener("click", () =>{
+            projetosCard[4].style.marginLeft="-30rem"      
+    })
+
+        buttonPrev[2].addEventListener("click", () =>{
+        projetosCard[4].style.marginLeft="0"
+    })
+
+
     ScrollReveal().reveal('.destaque', {
         delay: 210
     })
