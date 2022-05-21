@@ -674,7 +674,10 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
     }
     .projetosCard{
         min-width: 17.5rem;
