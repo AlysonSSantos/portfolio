@@ -81,7 +81,7 @@ const redirect = (way) =>{
             window.open("https://github.com/AlysonSSantos?tab=repositories", "_blank")
         break
         case "websitelimpeza":
-            window.open("https://info.matiasprocleaning.com/contact-us", "_blank")
+            window.open("http://rosacarolinenails.com.br/grupovip", "_blank")
         break
         case "listadegastos":
             window.open("http://lista-de-gastos.vercel.app/", "_blank")
